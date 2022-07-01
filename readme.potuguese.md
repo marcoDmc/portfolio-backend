@@ -19,13 +19,13 @@
 * na variável host você deve inserir o smtp do seu email em que receberá o email enviado, para encontrá-lo basta colocar o smtp no seu navegador e o tipo do seu email, por exemplo *smtp gmail*
 
 #
-* na porta basta digitar a porta de recebimento de e-mail na qual seu e-mail fornece
+* na  port_email  basta digitar a porta de recebimento de e-mail na qual seu e-mail fornece
 #
 * em secure se sua porta estiver acima de 465 você deve adicionar false , se estiver abaixo ou igual a 465 você deve adicionar true
 
 #
 
-* em myemail você adiciona seu e-mail que receberá o e-mail enviado
+* em my_email você adiciona seu e-mail que receberá o e-mail enviado
 
 #
 

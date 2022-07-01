@@ -19,13 +19,13 @@
 * in the host variable you must enter the smtp of your email in which you will receive the email sent, to find it just put smtp in your browser and the type of your email, for example *smtp gmail*
 
 #
-* on the port just enter the email receiving port on which your email provides
+* on the port_email just enter the email receiving port on which your email provides
 #
 * in secure if your port is above 465 you must add false , if it is below or equal to 465 you must add true
 
 #
 
-* in myemail you add your email that will receive the email sent
+* in my_email you add your email that will receive the email sent
 
 #
 
