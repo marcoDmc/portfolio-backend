@@ -30,8 +30,12 @@
 #
 
 * na parte de my_password você vai adicionar sua senha, se seu email for do tipo gmail você deve criar uma senha de app que funcione como uma senha alternativa para você usar em seu app, basta ir em gerenciar sua conta, depois ir em security e procure a senha do app, caso não esteja visível, a senha da sua conta provavelmente não está configurada com autenticação em duas etapas, para usar a senha do app, sua conta deve estar configurada com verificação, então é só pegar sua senha e adicionar a variável a minha senha
-![](./assets/env.png)
-![](./assets/configVarEnv.png)
+
+
+
+.env       |  config nodemailer
+:---------:|:------------------:
+![](./assets/env.png) | ![](./assets/configVarEnv.png)
 
 
 

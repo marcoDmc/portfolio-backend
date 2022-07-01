@@ -30,8 +30,11 @@
 #
 
 *  in the part of my_password you will add your password, if your email is of the gmail type you must create an app password that works as an alternative password for you to use in your app, just go to manage your account, then go to security and look for app password, if it is not visible, your account password is probably not configured with two-step authentication, to use the app password, your account must be configured with verification, then just get your password and add the variable to my_password
-![](./assets/env.png)
-![](./assets/configVarEnv.png)
+
+
+.env       |  config nodemailer
+:---------:|:------------------:
+![](./assets/env.png) | ![](./assets/configVarEnv.png)
 
 
 
