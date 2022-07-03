@@ -10,7 +10,7 @@ module.exports = {
 
       const page = await browser.newPage()
 
-      await page.goto(`http://localhost:3000/curriculum`, {
+      await page.goto(`http://localhost:${process.env.PORT || 3000}/curriculum`, {
         waitUntil: 'networkidle0',
       })
 
