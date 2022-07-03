@@ -21,6 +21,7 @@ module.exports = {
 
       await page.goto(`http://localhost:${process.env.PORT || 3000}/curriculum`, {
         waitUntil: 'networkidle0',
+        timeout:0
       })
 
       const pdf = await page.pdf({
