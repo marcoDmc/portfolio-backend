@@ -7,7 +7,14 @@ module.exports = {
   async handleSendPDF(req, res) {
     try {
       const browser = await puppeteer.launch({
-        ignoreDefaultArgs: ['--disable-extensions'],
+        headless: true,
+        defaultViewport: null,
+        args: [
+            "--incognito",
+            "--no-sandbox",
+            "--single-process",
+            "--no-zygote"
+        ],
       })
 
       const page = await browser.newPage()
