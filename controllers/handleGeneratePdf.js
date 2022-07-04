@@ -10,22 +10,22 @@ module.exports = {
         headless: true,
         defaultViewport: null,
         args: [
-            "--incognito",
-            "--no-sandbox",
-            "--single-process",
-            "--no-zygote"
+          '--incognito',
+          '--no-sandbox',
+          '--single-process',
+          '--no-zygote',
         ],
       })
 
       const page = await browser.newPage()
 
-      await page.goto(`http://localhost:${process.env.PORT || 3000}/curriculum`, {
-        waitUntil: 'networkidle0',
-        
-      })
-      page.setDefaultNavigationTimeout(0)
+      await page.goto(
+        `http://localhost:${process.env.PORT || 3000}/curriculum`,
+        {
+          waitUntil: 'networkidle0',
+        },
+      )
 
-      
       const pdf = await page.pdf({
         printBackground: true,
         format: 'Letter',
@@ -52,4 +52,5 @@ module.exports = {
         : res.send(data)
     })
   },
+ 
 }
