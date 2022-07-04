@@ -30,6 +30,7 @@ module.exports = {
       const pdf = await page.pdf({
         printBackground: true,
         format: 'Letter',
+        margin:0
       })
 
       res.contentType('application/pdf')
