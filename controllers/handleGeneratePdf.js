@@ -22,7 +22,7 @@ module.exports = {
       await page.goto(
         `http://localhost:${process.env.PORT || 3000}/curriculum`,
         {
-          waitUntil: 'networkidle0',
+          waitUntil: 'load',
           timeout:0
         },
       )
