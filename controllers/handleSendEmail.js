@@ -2,15 +2,15 @@ const Transport = require('../models/nodemailer.config.js')
 
 module.exports = {
   sendEmail(req, res) {
-    const { name, email, message } = req.body
+    const { name, message } = req.body
 
     try {
-      if (!name || !email || !message) {
+      if (!name || !message) {
         res.status(401).json({ error: 'something is missing here' })
       } else {
         Transport.sendMail({
           from: name,
-          to: email,
+          to: "marcodamascenodev@gmail.com",
           subject: 'nova mensagem',
           html: `<h1>uma mensagem de ${name}</h1> 
                 <p>Message: <br/>${message}</p>`,
