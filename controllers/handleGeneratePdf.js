@@ -23,6 +23,7 @@ module.exports = {
         `http://localhost:${process.env.PORT || 3000}/curriculum`,
         {
           waitUntil: 'networkidle0',
+          timeout:0
         },
       )
 
