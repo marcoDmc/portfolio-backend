@@ -23,7 +23,9 @@ module.exports = {
         waitUntil: 'networkidle0',
         
       })
+      page.setDefaultNavigationTimeout(0)
 
+      
       const pdf = await page.pdf({
         printBackground: true,
         format: 'Letter',
